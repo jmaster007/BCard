@@ -52,7 +52,7 @@
                                             <constraint firstItem="Uf8-w1-Ppb" firstAttribute="leading" secondItem="bnh-iA-cLQ" secondAttribute="leading" id="qqA-yx-daG"/>
                                         </constraints>
                                     </view>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F8A-8y-lj7">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F8A-8y-lj7">
                                         <rect key="frame" x="0.0" y="100" width="303" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="90" id="acz-D7-tMn"/>
@@ -121,7 +121,6 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="addLogoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A3O-n8-uzg"/>
                                     <action selector="setContactPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oSR-gv-6Dy"/>
                                 </connections>
                             </button>

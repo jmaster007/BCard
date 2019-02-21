@@ -35,10 +35,12 @@ class ViewController: UIViewController, CNContactPickerDelegate, UINavigationCon
     }
     
     func updateView() {
-
-        self.qrCodeImageView.isHidden = !businessCard.isFilled
-        self.infoStackView.isHidden = !businessCard.isFilled
-        self.contactButton.isHidden = businessCard.isFilled
+        // hiding and rehiding elements
+        self.qrCodeImageView.isHidden = !businessCard.isFilledInfo
+        self.infoStackView.isHidden = !businessCard.isFilledInfo
+        self.contactButton.isHidden = businessCard.isFilledInfo
+        self.logoImageView.isHidden = !businessCard.isFilledLogo
+        self.logoButtonView.isHidden = businessCard.isFilledLogo
         
         // Updating all labels and their hideness from businessCard
         // Hide label if it's empty
@@ -58,6 +60,8 @@ class ViewController: UIViewController, CNContactPickerDelegate, UINavigationCon
         self.siteLabel.isHidden = self.businessCard.site == ""
         
         self.qrCodeImageView.image = self.businessCard.qr
+        
+        self.logoImageView.image = self.businessCard.logo
     }
     
     // MARK - contacts

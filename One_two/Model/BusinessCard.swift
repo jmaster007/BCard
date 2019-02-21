@@ -19,7 +19,8 @@ class BusinessCard {
     var site: String
     var qr: UIImage
     var logo: UIImage
-    var isFilled = false
+    var isFilledInfo = false
+    var isFilledLogo = false
     
     struct keys {
         static let name = "name"
@@ -29,7 +30,8 @@ class BusinessCard {
         static let site = "site"
         static let qr = "qr"
         static let logo = "logo"
-        static let isEmpty = "isEmpty"
+        static let isFilledInfo = "isFilledInfo"
+        static let isFilledLogo = "isFilledLogo"
     }
     
     init() {
@@ -61,8 +63,10 @@ class BusinessCard {
             self.logo = UIImage(data: logo)!
         } else { logo = UIImage() }
         
-        let isFilled = UserDefaults.standard.bool(forKey: keys.isEmpty)
-        self.isFilled = isFilled
+        let isFilledInfo = UserDefaults.standard.bool(forKey: keys.isFilledInfo)
+        self.isFilledInfo = isFilledInfo
+        let isFilledLogo = UserDefaults.standard.bool(forKey: keys.isFilledLogo)
+        self.isFilledLogo = isFilledLogo
     }
     
     func updateContactInfo(using contact: CNContact) {
@@ -91,8 +95,8 @@ class BusinessCard {
         }
         
         // Update filled switcher
-        self.isFilled = true
-        UserDefaults.standard.set(self.isFilled, forKey: keys.isEmpty)
+        self.isFilledInfo = true
+        UserDefaults.standard.set(self.isFilledInfo, forKey: keys.isFilledInfo)
         
         // Update QR-code
         do {
@@ -134,8 +138,10 @@ class BusinessCard {
     func updateLogo(using image: UIImage) {
         // Update Logo
         self.logo = image
-        let qrData = image.pngData()
-        UserDefaults.standard.set(qrData, forKey: keys.logo)
+        UserDefaults.standard.set(image.pngData(), forKey: keys.logo)
+        // Update status
+        self.isFilledLogo = true
+        UserDefaults.standard.set(self.isFilledLogo, forKey: keys.isFilledLogo)
     }
 }
 
