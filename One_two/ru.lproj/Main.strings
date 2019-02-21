@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Steeve"; ObjectID = "22n-oF-WRH"; */
+"22n-oF-WRH.text" = "Steeve";
+
+/* Class = "UILabel"; text = "mail@mysite.ru"; ObjectID = "4bp-kC-QCi"; */
+"4bp-kC-QCi.text" = "mail@mysite.ru";
+
+/* Class = "UIButton"; normalTitle = "Set contact"; ObjectID = "GXm-HG-Hta"; */
+"GXm-HG-Hta.normalTitle" = "Выбрать контакт";
+
+/* Class = "UILabel"; text = "+7-911-911-11-11"; ObjectID = "R86-DU-fmK"; */
+"R86-DU-fmK.text" = "+7-911-911-11-11";
+
+/* Class = "UIButton"; normalTitle = "Add logo"; ObjectID = "Uf8-w1-Ppb"; */
+"Uf8-w1-Ppb.normalTitle" = "Добавить лого";
+
+/* Class = "UILabel"; text = "https://mysite.ru"; ObjectID = "bXz-og-kpo"; */
+"bXz-og-kpo.text" = "https://mysite.ru";
+
+/* Class = "UILabel"; text = "founder"; ObjectID = "fgX-zd-A22"; */
+"fgX-zd-A22.text" = "founder";

@@ -12,6 +12,7 @@
 		221690C8221EA862003D32F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221690C6221EA862003D32F2 /* Main.storyboard */; };
 		221690CA221EA863003D32F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221690C9221EA863003D32F2 /* Assets.xcassets */; };
 		221690CD221EA863003D32F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221690CB221EA863003D32F2 /* LaunchScreen.storyboard */; };
+		221690DB221ED7FB003D32F2 /* BusinessCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221690DA221ED7FB003D32F2 /* BusinessCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		221690C9221EA863003D32F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		221690CC221EA863003D32F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		221690CE221EA863003D32F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		221690DA221ED7FB003D32F2 /* BusinessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCard.swift; sourceTree = "<group>"; };
+		221690DD221EFB2D003D32F2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +57,31 @@
 		221690C1221EA862003D32F2 /* One_two */ = {
 			isa = PBXGroup;
 			children = (
+				221690DC221EE8E2003D32F2 /* Controller */,
+				221690D9221ED7EC003D32F2 /* Model */,
 				221690C2221EA862003D32F2 /* AppDelegate.swift */,
-				221690C4221EA862003D32F2 /* ViewController.swift */,
 				221690C6221EA862003D32F2 /* Main.storyboard */,
 				221690C9221EA863003D32F2 /* Assets.xcassets */,
 				221690CB221EA863003D32F2 /* LaunchScreen.storyboard */,
 				221690CE221EA863003D32F2 /* Info.plist */,
 			);
 			path = One_two;
+			sourceTree = "<group>";
+		};
+		221690D9221ED7EC003D32F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				221690DA221ED7FB003D32F2 /* BusinessCard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		221690DC221EE8E2003D32F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				221690C4221EA862003D32F2 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				221690C5221EA862003D32F2 /* ViewController.swift in Sources */,
+				221690DB221ED7FB003D32F2 /* BusinessCard.swift in Sources */,
 				221690C3221EA862003D32F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +168,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				221690C7221EA862003D32F2 /* Base */,
+				221690DD221EFB2D003D32F2 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -166,6 +188,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -227,6 +250,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -292,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.kin.One-two";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.kin.One-two";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
